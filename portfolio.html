@@ -1,9 +1,10 @@
-<!DOCTYPE=html>
-<html lang = 'en-us'>
+<!DOCTYPE html>
+<!--<html lang='en-us'>-->
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="assets/style/style.css">
-        <title>
+        <!-- this title changes from page to page-->
+        <title> 
             Portfolio
         </title>
     </head>
@@ -20,31 +21,57 @@
                         <li><a href="portfolio.html">portfolio</a></li>
                         <li><a href="index.html">about</a></li>
                     </ul>     
-                </div>
-            </div>
+                </div><!--end "topContentRight"-->
+            </div><!--end "topContent"-->
         </div><!--end "top"-->
 
+<!-- this is the section that varies from page to page-->
         <div id="main">
             <div id="mainContent">
+                <!-- this title changes from page to page-->
                 <div id="mainTitle">
                     Portfolio
                 </div>
-                    <div id="mainParagraph">
-                        <img id="me" src="assets/images/nf.jfif" height=100px width=100px>
-                        <p>
-                            lorem ipsum is simply dummy text 
-                        </p>
 
-                        <p>
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-                        </p>
-                       
-                        <p>
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-                        </p>
-                        
-                    </div>
+                <!-- this is the only section that varies structurally from page to page-->
+                
+                    <div class="column"> 
+                        <div class ="portfolioProject">
+                            <img class="portfolioImage" src="assets/images/frog1.jpeg" alt="Project Frog1">
+                            <div class="imageLabel">
+                                Frog1
+                            </div>
+                        </div>
+                        <div class ="portfolioProject">
+                            <img class="portfolioImage" src="assets/images/frog2.jpeg" alt="Project Frog2">
+                            <div class="imageLabel">
+                                Frog2
+                            </div>
+                        </div>
+                        <div class ="portfolioProject">               
+                            <img class="portfolioImage" src="assets/images/frog3.jpeg" alt="Project Frog3">
+                            <div class="imageLabel">
+                                Frog3
+                            </div>
+                        </div>
+                    </div><!-- end of column 1-->
+                    
+                    <div class="column"> 
+                        <div class ="portfolioProject"> 
+                            <img class="portfolioImage" src="assets/images/frog4.jpeg" alt="Project Frog4">
+                            <div class="imageLabel">
+                                Frog4
+                            </div>
+                        </div>
+                        <div class ="portfolioProject"> 
+                            <img class="portfolioImage" src="assets/images/frog5.jpeg" alt="Project Frog5">
+                            <div class="imageLabel">
+                                Frog5
+                            </div>
+                        </div>
+                    </div><!-- end of column 2-->
 
+              
             </div>
         </div>
 

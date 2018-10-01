@@ -1,9 +1,10 @@
-<!DOCTYPE=html>
+<!DOCTYPE html> <!-- passed validator test-->
 <html lang = 'en-us'>
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="assets/style/style.css">
-        <title>
+        <!-- this title changes from page to page-->
+        <title> 
             Contact
         </title>
     </head>
@@ -20,33 +21,33 @@
                         <li><a href="portfolio.html">portfolio</a></li>
                         <li><a href="index.html">about</a></li>
                     </ul>     
-                </div>
-            </div>
+                </div><!--end "topContentRight"-->
+            </div><!--end "topContent"-->
         </div><!--end "top"-->
 
         <div id="main">
             <div id="mainContent">
+                <!-- this title changes from page to page-->
                 <div id="mainTitle">
                     Contact
                 </div>
+
+                <!-- this is the only section that varies structurally from page to page-->
+                <p class="textFieldTitleTop">Name</p>
+                <input class="textField" type="text" name="myName"><br>
+                <p class="textFieldTitle">Email</p>
+                <input class="textField" type="text" name="myEmail"><br>
+                <p class="textFieldTitle">Message</p>
+                <textarea class="textBox" placeholder="message" rows="10">
+                </textarea>
+                <input id="button" type="submit">
                 
-<!--                <form> -->
-                    Name:<br>
-                    <input type="text" name="myName" class="textField"><br>
-                    Email:<br>
-                    <input type="text" name="myEmail" class="textField"><br>
-                    Message:<br>
-                    <input type="text" name="myMessage" class="textBox"><br>
-                    <input type="submit"> -->
-
- <!--               </form> -->
-
-            </div>
-        </div>
+            </div><!--end "mainContent"-->
+        </div><!--end "main"-->
 
         <div id="bottom">
             Copyright &copy;
-        </div><!--end "bottom"-->
+        </div>
 
     </body>
     
