@@ -57,6 +57,7 @@
     padding-top:20px;
 }
 
+
 .navbar{
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
@@ -110,3 +111,17 @@
 }
 
 
+
+footer{
+    background-color: #666666;
+    border-top:3px solid #4aaaa5;
+    text-align: center;
+    font-size: 8px;
+    color:white;
+    padding-top:20px;
+    
+    position:fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+}
