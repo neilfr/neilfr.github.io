@@ -89,7 +89,8 @@
 }
 
 .portfolioCard{
-    height:150px;
+    max-width:100%;
+    height:auto;
 }
 
 .myCard:hover{
