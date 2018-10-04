@@ -1,84 +1,113 @@
-<!DOCTYPE html>
-<!--<html lang='en-us'>-->
+<!doctype html>
+<html lang="en-us">
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="assets/style/style.css">
-        <!-- this title changes from page to page-->
-        <title> 
+
+        <title>
             Portfolio
         </title>
     </head>
-    
+ 
     <body>
-        <div id="top">
-            <div id="topContent">
-                <div id="topContentLeft">
-                    Neil Froggatt
+        <div class="container">
+            <div class="row header"> <!-- header -->
+                <div class="headerLeft col-md-2">
                 </div>
-                <div id="topContentRight">
-                    <ul>
-                        <li><a href="contact.html">contact</a></li>
-                        <li><a href="portfolio.html">portfolio</a></li>
-                        <li><a href="index.html">about</a></li>
-                    </ul>     
-                </div><!--end "topContentRight"-->
-            </div><!--end "topContent"-->
-        </div><!--end "top"-->
-
-<!-- this is the section that varies from page to page-->
-        <div id="main">
-            <div id="mainContent">
-                <!-- this title changes from page to page-->
-                <div id="mainTitle">
-                    Portfolio
-                </div>
-
-                <!-- this is the only section that varies structurally from page to page-->
+                <div class="headerCenter col-md-8">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                            <a class="navbar-brand" href="#">Neil Froggatt</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            
+                            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                                
+                                <ul class="navbar-nav">
+                                
+                                <li class="nav-item">
+                                        <a class="nav-link" href="index.html">About</a>
+                                </li>  
+                                <li class="nav-item">
+                                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>      
+                                
+                            </ul>
                 
-                    <div class="column"> 
-                        <div class ="portfolioProject">
-                            <img class="portfolioImage" src="assets/images/frog1.jpeg" alt="Project Frog1">
-                            <div class="imageLabel">
-                                Frog1
                             </div>
-                        </div>
-                        <div class ="portfolioProject">
-                            <img class="portfolioImage" src="assets/images/frog2.jpeg" alt="Project Frog2">
-                            <div class="imageLabel">
-                                Frog2
-                            </div>
-                        </div>
-                        <div class ="portfolioProject">               
-                            <img class="portfolioImage" src="assets/images/frog3.jpeg" alt="Project Frog3">
-                            <div class="imageLabel">
-                                Frog3
-                            </div>
-                        </div>
-                    </div><!-- end of column 1-->
-                    
-                    <div class="column"> 
-                        <div class ="portfolioProject"> 
-                            <img class="portfolioImage" src="assets/images/frog4.jpeg" alt="Project Frog4">
-                            <div class="imageLabel">
-                                Frog4
-                            </div>
-                        </div>
-                        <div class ="portfolioProject"> 
-                            <img class="portfolioImage" src="assets/images/frog5.jpeg" alt="Project Frog5">
-                            <div class="imageLabel">
-                                Frog5
-                            </div>
-                        </div>
-                    </div><!-- end of column 2-->
+                        </nav>  
+                </div>
+                <div class="headerRight col-md-2">
+                </div>
+            </div> <!-- end header -->
 
-              
-            </div>
+            <div class="row main"> <!-- main -->
+                <div class="mainLeft col-md-2">
+                </div>
+                <div class="mainCenter col-md-8">
+                    <div class="row">
+                        <div class="mainCenterTitle col-md-12">
+                            Portfolio
+                        </div>
+                    </div>
+                    <div class="row">
+                            <div class="mainCenterContent col-md-12">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="myCard">
+                                            <img class="card-img-top portfolioCard" src="assets/images/frog1.jpeg" alt="Frog1">
+                                            <p class="cardLabel">Frog1</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="myCard">
+                                            <img class="card-img-top portfolioCard" src="assets/images/frog2.jpeg" alt="Frog2">
+                                            <p class="cardLabel">Frog1</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="myCard">
+                                            <img class="card-img-top portfolioCard" src="assets/images/frog3.jpeg" alt="Frog3">
+                                            <p class="cardLabel">Frog1</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="myCard">
+                                            <img class="card-img-top portfolioCard" src="assets/images/frog4.jpeg" alt="Frog4">
+                                            <p class="cardLabel">Frog1</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="myCard">
+                                            <img class="card-img-top portfolioCard" src="assets/images/frog5.jpeg" alt="Frog5">
+                                            <p class="cardLabel">Frog1</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                    </div>
+
+                </div>
+                <div class="mainRight col-md-2">
+                </div>
+            </div><!-- end main -->
+
+            <div class="row"> <!-- footer -->
+                <div class="footerFull col-md-12">
+                        Copyright &copy;           
+                </div>
+            </div><!-- end footer -->
         </div>
-
-        <div id="bottom">
-            Copyright &copy;
-        </div><!--end "bottom"-->
-
     </body>
-    
 </html>

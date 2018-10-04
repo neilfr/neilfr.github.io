@@ -1,191 +1,111 @@
-/* common style elements for all pages*/
-
-body {
+.body{
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777777;
     margin: 0px;
+    padding: 0px;
 }
 
-html, body { 
-    height:100%;
-    margin: 0;
+.container, .headerLeft, .headerCenter, .headerRight, .mainLeft, .mainCenter, .mainRight, .footerFull, .navbar {
+    padding: 0px;
 }
 
-.wrapper {
-    min-height:100%;
-    margin-bottom:-50px;
+.navbar{
+    background-color:white !important;
 }
 
-.push{
-    height:50px;
+.headerLeft, .headerCenter, .headerRight{
+    background-color:white;
+    border-bottom:2px solid #cccccc;
 }
 
-#top{
+.main{
+    background-image: url("../images/gravel.png");
+    padding:20px 0px;
+}
+
+.mainCenter{
     background-color: white;
-    border-bottom: 2px solid #cccccc;
+    padding: 0px 15px;
 }
 
-#topContent{
-    width: 960px;
-    margin: auto;
-    overflow: auto;
-}
-
-#topContentLeft{
+.mainCenterTitle{
+    font-family: 'Georgia', Times, Times New Roman, serif;
     font-size: 24px;
     font-weight: bold;
-    float: left;
-    color: white;
-    background-color: #4aaaa5;
-    padding: 20px;
-    font-family: 'Georgia', Times, Times New Roman, serif;
-}
-
-#topContentRight{
-    float: right;
-    color: yellow;
-    text-align: right;
-    display: inline;
-    padding-top: 20pt;
-}
-
-ul{
-    list-style-type: none;
-    display: inline;
-}
-
-li{
-    float: right;
-}
-
-a{
-    display: block;
-    padding-left: 20px;
-}
-
-
-/* forcing the "unvisited" color for review purposes, so I don't have to keep clearing my cache.  Normally wouldn't do this. */
-a:visited{
-    color: #777777;
-}
-
-a:visited:hover{
-    color: black;
-    font-weight: bold;
-}
-
-#main{
-    background-image: url("../images/gravel.png");
-    padding: 20px 20px 60px 20px;
-}
-
-#mainContent{
-    width: 920px;
-    background-color: white;
-    margin: auto;
-    padding: 20px;
+    padding: 15px;
     border-left: 2px solid #dddddd;
     border-right: 2px solid #dddddd;
-    border-bottom: 2px solid #dddddd;
-    overflow: auto;
-}
-
-#mainTitle{
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    font-size: 24px;
-    font-weight: bold;
-    padding-bottom: 20px;
     border-bottom: 2px solid #dddddd;
     color: #4aaaa5;
 }
 
+.mainCenterContent{
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    border-left: 2px solid #dddddd;
+    border-right: 2px solid #dddddd;
+    border-bottom: 2px solid #dddddd;
+    padding: 15px 15px 30px 15px;
+}
 
-
-#bottom{
-    color: white; /* not the right color */
-    clear: both;
+.footerFull{
     background-color: #666666;
+    border-top:3px solid #4aaaa5;
     text-align: center;
     font-size: 8px;
-    border-top: 5px solid teal;
-    padding-top: 20px;
-}
-/* end of common style elements for all pages*/
-
-
-/* styles specifically for "About Me" page */
-p{
-    line-height: 2;
-    font-size: 12;
+    color:white;
+    padding-top:20px;
 }
 
-#me{
-    padding-top: 15px;
-    padding-right: 20px;
+.navbar{
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.navbar-brand{
+    color: white !important;
+    background-color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif; 
+    font-size: 24px;
+    font-weight: bold;
+    padding:15px;
+}
+
+#neilFroggatt{
     float: left;
     height: 100px;
-    width: 100px;
-}
-/* end of styles specifically for "About Me" page */
-
-
-/* styles specifically for "Portfolio" page */
-.column{
-    padding-top: 20px;
-    float: left;
-    width: 320px;
+    width: 115px;
+    padding-right:15px;
 }
 
-.portfolioImage{
-    width: 290px;
-    height: 200px;
+.contactButton{
+    background-color: #4aaaa5;
+    color: white;
+    border: none;
+    border-radius: 0px;
 }
 
-.portfolioProject:hover{
+.contactInput{
+    border-radius: 0px;
+}
+
+.portfolioCard{
+    height:150px;
+}
+
+.myCard:hover{
     opacity: 0.5;
 }
 
-.imageLabel{
+.cardLabel{
     font-family: 'Georgia', Times, Times New Roman, serif;
+    position: relative;
     font-size: 20px;
     color: white;
     background-color: #4aaaa5;
-    position: relative;
-    top: -93px;
-    line-height: 64px;
+    line-height: 48px;
+    top: -60px;
     text-align: center;
-    width: 290px;
-}
-/* end of styles specifically for "Portfolio" page */
 
-
-/* styles specifically for "Contact Me" page */
-.textFieldTitleTop{
-    line-height: 1;
-    margin: 20px 0px 10px 0px;
 }
 
-.textFieldTitle{
-    line-height: 1;
-    margin: 10px 0px;
-}
-.textField{
-    width: 920px;
-    line-height: 1.5;
-}
 
-.textBox{
-    width: 920px;
-}
-
-#button{
-    margin-top: 20px;
-    background-color: #4aaaa5;
-    color: white;
-    width: 100px;
-    height: 35px;
-    border: none;
-}
-
-#button:hover {background-color: #008080;}
-/* end of styles specifically for "Contact Me" page */
