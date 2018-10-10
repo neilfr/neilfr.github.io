@@ -110,3 +110,9 @@
 }
 
 
+/* media query to stop 'body' from sliding off the left side of the browser window when it is narrowed below 586px*/
+@media screen and (max-width:586px){
+    body{
+        margin-left: 15px;
+    }
+}
