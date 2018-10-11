@@ -1,94 +1,55 @@
-<!doctype html>
-<html lang="en-us">
+<!DOCTYPE html> <!-- passed validator test-->
+<html lang = 'en-us'>
     <head>
-        <meta charset="UTF-8">
-        <!-- added from here-->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-         <!-- to here-->
-        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="assets/style/style.css">
-
-        <title>
+        <!-- this title changes from page to page-->
+        <title> 
             Contact
         </title>
     </head>
- 
+    
     <body>
-        <div class="container">
-            <div class="row header"> <!-- header -->
-                <div class="headerLeft col-md-2">
+        <div id="top">
+            <div id="topContent">
+                <div id="topContentLeft">
+                    Neil Froggatt
                 </div>
-                <div class="headerCenter col-md-8">
-                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                            <a class="navbar-brand" href="#">Neil Froggatt</a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            
-                            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                                
-                                <ul class="navbar-nav">
-                                
-                                <li class="nav-item">
-                                        <a class="nav-link" href="index.html">About</a>
-                                </li>  
-                                <li class="nav-item">
-                                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact</a>
-                                </li>      
-                                
-                            </ul>
+                <div id="topContentRight">
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="index.html">About</a></li>
+                    </ul>     
+                </div><!--end "topContentRight"-->
+            </div><!--end "topContent"-->
+        </div><!--end "top"-->
+
+        <div id="main">
+            <div id="mainContent">
+                <!-- this title changes from page to page-->
+                <div id="mainTitle">
+                    Contact
+                </div>
+
+                <!-- this is the only section that varies structurally from page to page-->
+                <p class="textFieldTitleTop">Name</p>
+                <input class="textField" type="text" name="myName"><br>
+                <p class="textFieldTitle">Email</p>
+                <input class="textField" type="text" name="myEmail"><br>
+                <p class="textFieldTitle">Message</p>
+                <textarea class="textBox" placeholder="message" rows="10">
+                </textarea>
+                <input id="button" type="submit">
                 
-                            </div>
-                        </nav>  
-                </div>
-                <div class="headerRight col-md-2">
-                </div>
-            </div> <!-- end header -->
+            </div><!--end "mainContent"-->
+        </div><!--end "main"-->
 
-            <div class="row main"> <!-- main -->
-                <div class="mainLeft col-md-2">
-                </div>
-                <div class="mainCenter col-md-8">
-                    <div class="row">
-                        <div class="mainCenterTitle col-md-12">
-                            Contact
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="mainCenterContent col-md-12">
-                                    <form>
-                                            <div class="form-group">
-                                              <label for="formGroupExampleInput">Name</label>
-                                              <input type="text" class="form-control contactInput" id="formGroupExampleInput" placeholder="Example input">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="exampleInputEmail1">Email address</label>
-                                                <input type="email" class="form-control contactInput" id="exampleInputEmail1" placeholder="Enter email">  <!--aria-describedby="emailHelp" -->
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="exampleFormControlTextarea1">Message</label>
-                                                <textarea class="form-control contactInput" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                            </div>
-                                            <button type="submit" class="btn btn-primary contactButton">Submit</button>
-                                    </form>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="mainRight col-md-2">
-                </div>
-            </div><!-- end main -->
-
-            <div class="row"> <!-- footer -->
-                <div class="footerFull col-md-12">
-                        Copyright &copy;           
-                </div>
-            </div><!-- end footer -->
+        <div id="bottom">
+            Copyright &copy;
         </div>
+
     </body>
+    
 </html>
