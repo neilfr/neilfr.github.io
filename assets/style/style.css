@@ -229,14 +229,29 @@ p{
         margin-left:5px;
     }
 
-    #topContentRight{
-        margin-right:15px;
+
+
+    #topContentRight ul{
+        margin:0;
     }
 
 }
 
 @media screen and (max-width:640px){
   
+    #topContentRight{
+        clear:both;
+        margin:auto;
+        float:none;
+        padding-left:0;
+    }
+
+    #topContentRight ul, #topContentRight ul a{
+        margin:0;
+        padding:0 15px 0 0;
+
+    }
+    
     #topContent{
         margin:0;
         width:100%;
@@ -252,9 +267,11 @@ p{
         line-height: 3em;
     }
 
-#me{
-    float:none;
-    width:100%;
-    height:auto;
-}
+    #me{
+        float:none;
+        width:100%;
+        height:auto;
+    }
+
+
 }
