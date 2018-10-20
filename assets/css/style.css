@@ -1,0 +1,69 @@
+body{
+    text-align:center;
+}
+
+h1{
+    font-size:2em;
+}
+
+h2{
+    font-size:1.5em;
+    padding-top:20px;
+}
+
+#HiddenWord{
+    padding-left:1em;
+    letter-spacing:1em;
+    line-height:1.5em;
+}
+
+#dogbanner{
+    width:40%;
+}
+
+#CallToAction{
+    padding:20px;
+}
+
+#StatsTable{
+    width:96%;
+    line-height: 1.5em; 
+    font-weight: bold;
+    margin-left:2%;
+    margin-right:2%;
+    margin-bottom:20px;
+}
+
+th,td{
+    border:1px solid black;
+}
+#StatsTable > th,td{
+    width:33%;
+}
+/*
+th, td{
+    width:33%;
+    border:1px solid black; /* while testing */
+/*}
+
+tr{
+    line-height:4em;
+}
+*/
+
+#GuessTable{
+    border:1px solid black;
+    width:96%;
+    line-height: 1.5em; 
+    font-weight: bold;
+    margin-left:2%;
+    margin-right:2%;
+    margin-bottom:20px;
+}
+
+#guessedDog{
+    width:120px;
+    height:90px;
+    margin:auto;
+    text-align:center;
+}

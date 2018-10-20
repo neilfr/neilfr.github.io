@@ -1,68 +1,65 @@
-<!DOCTYPE html> <!--passed validator test-->
-<html lang = 'en-us'>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="assets/style/style.css">
-        <!-- this title changes from page to page-->
-        <title> 
-            About
-        </title>
-    </head>
-    
-    <body>
-<div class="wrapper">
-        <div id="top">
-            <div id="topContent">
-                <div id="topContentLeft">
-                    Neil Froggatt
-                </div>
-                <div id="topContentRight">
-                    <ul>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="index.html">About</a></li>
-                    </ul>     
-                </div><!--end "topContentRight"-->
-            </div><!--end "topContent"-->
-        </div><!--end "top"-->
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        Word Guess Game
+    </title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <img id="dogbanner" src="assets/images/bassetbanner.jpg" alt="Dogs">
+    <h1>Dogs!</h1>
+
+    <div id="CallToAction">Press Any Key To Start</div>
+
+    <table id="StatsTable">
+        <tr>
+            <th>Wins</th>
+            <th>Losses</th>
+            <th>Guesses Remaining</th>
+        </tr>
+        <tr>
+            <td id="NumberOfWins">0</td>
+            <td id="NumberOfLosses">0</td>
+            <td id="GuessesRemaining">10</td>
+        </tr>
+     
+    </table>
+    <table id="GuessTable">
+        <tr>
+            <th>Guess the Dog Breed!</th>
+            <th>Letters Already Guessed:</th>
+        </tr>
+        <tr>
+            <td id="HiddenWord"></td>
+            <td id="LettersGuessed"></td>
+        </tr>
+    </table>
+
+    <!--
+    <div class = "bigtext">Guess the Dog Breed!</div>
+    <div id="HiddenWord"></div>
+    <div class = "bigtext">Letters Already Guessed:</div>
+    <div id="LettersGuessed"></div>
+-->
+    <div id="guessedDog"></div>
 
 
-        <div id="main">
-            <div id="mainContent">
-                <!-- this title changes from page to page-->
-                <div id="mainTitle">
-                    About Me
-                </div>
-
-                <!-- this is the only section that varies structurally from page to page-->
-
-                        <img id="me" src="assets/images/nf.jfif" alt="Neil Froggatt">
-                        <p>
-                            Well… it only took 27 years, but I’m finally back… and writing code again!  Feels great – like the shackles have finally been removed! 
-                        </p>
-
-                        <p>
-                            In 1987, for my first co-op employer, I designed and wrote my first commercial application using Microsoft Pascal – yes, believe it or not, they had a Pascal compiler for a time.  My application sold enough copies that my employer made a decent profit after paying my wage for 3 work terms.  A few more work terms doing Fortran and Cobol for a large utilities company, and I graduated into full-time work.
-                        </p>
-                       
-                        <p>
-                            Then, I followed the opportunities and the money that came my way - and it took me into technical sales… then technical marketing… then marketing… and managing an IT team.  Somehow that kid that loved to pound out code for kicks on a Commodore VIC-20 after school got lost.
-                        </p>
-                        <p>
-                            Finally getting back to what I love!  One assignment down and I can’t wait for the next one!  
-                        </p>
-                      
-            </div><!--end "mainContent"-->
-        </div><!--end "main"-->
-    <div class="push">
-
+<!-- for testing purposes 
+    <h2>
+        Current Word
+    </h2>
+    <div id="CurrentWord">
     </div>
-    </div><!-- end wrapper-->
-        <div id="bottom">
-            Copyright &copy;
-        </div><!--end "bottom"-->
+-->
 
-    </body>
-    
+    <script src="assets/javascript/game.js"></script>
+
+</body>
+
 </html>
