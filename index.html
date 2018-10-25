@@ -1,65 +1,42 @@
 <!doctype html>
 <html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>Gem Collector!</title>
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        
+        <!-- Link to the jQuery Library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
 
-<head>
-    <meta charset="utf-8">
-    <title>
-        Word Guess Game
-    </title>
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
-
-<body>
-
-    <img id="dogbanner" src="assets/images/bassetbanner.jpg" alt="Dogs">
-    <h1>Dogs!</h1>
-
-    <div id="CallToAction">Press Any Key To Start</div>
-
-    <table id="StatsTable">
-        <tr>
-            <th>Wins</th>
-            <th>Losses</th>
-            <th>Guesses Remaining</th>
-        </tr>
-        <tr>
-            <td id="NumberOfWins">0</td>
-            <td id="NumberOfLosses">0</td>
-            <td id="GuessesRemaining">10</td>
-        </tr>
-     
-    </table>
-    <table id="GuessTable">
-        <tr>
-            <th>Guess the Dog Breed!</th>
-            <th>Letters Already Guessed:</th>
-        </tr>
-        <tr>
-            <td id="HiddenWord"></td>
-            <td id="LettersGuessed"></td>
-        </tr>
-    </table>
-
-    <!--
-    <div class = "bigtext">Guess the Dog Breed!</div>
-    <div id="HiddenWord"></div>
-    <div class = "bigtext">Letters Already Guessed:</div>
-    <div id="LettersGuessed"></div>
--->
-    <div id="guessedDog"></div>
-
-
-<!-- for testing purposes 
-    <h2>
-        Current Word
-    </h2>
-    <div id="CurrentWord">
-    </div>
--->
+    <body>
+        <h1>Gem Collector</h1>
+        <div id="instructions">
+            <p>Win by matching your score to the target score</p>
+            <p>Each gem below has a secret random value each game</p>
+            <p>Click on a gem, and add that tile's secret value to your score</p>
+        </div>
+        <div id="targetScore"></div>
+        <div id="playerScore"></div>
+        <div id="gems">
+            <div class="gem">
+                <img id="ruby" class="myImage" src="assets/images/ruby.jfif" alt="ruby">
+            </div>
+            <div class="gem">
+                <img id="sapphire" class="myImage" src="assets/images/sapphire.jfif" alt="ruby">
+            </div>
+            <div class="gem">
+                <img id="amber" class="myImage" src="assets/images/amber.jfif" alt="ruby">
+            </div>
+            <div class="gem">
+                <img id="emerald" class="myImage" src="assets/images/emerald.jfif" alt="ruby">
+            </div>
+        </div>
+        <div id="wins"></div>
+        <div id="losses"></div>
+    </body>
 
     <script src="assets/javascript/game.js"></script>
-
-</body>
 
 </html>

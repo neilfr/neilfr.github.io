@@ -1,69 +1,46 @@
 body{
-    text-align:center;
+    font-family:arial;
 }
 
 h1{
+    background-color:darkorange;
+    color:white;
+    font-weight:bold;
     font-size:2em;
+    padding:10px 0px;
 }
 
-h2{
-    font-size:1.5em;
-    padding-top:20px;
-}
-
-#HiddenWord{
-    padding-left:1em;
-    letter-spacing:1em;
+#instructions{
+    background-color:bisque;
     line-height:1.5em;
+    color:black;
 }
 
-#dogbanner{
-    width:40%;
+p{
+    margin:0.5em;
 }
 
-#CallToAction{
-    padding:20px;
+#targetScore, #playerScore, #wins, #losses{
+    font-size:2em;
+    background-color:darkorange;
+    color:white;
+    margin: 5px 0px;
 }
 
-#StatsTable{
-    width:96%;
-    line-height: 1.5em; 
-    font-weight: bold;
-    margin-left:2%;
-    margin-right:2%;
-    margin-bottom:20px;
+.gem{
+    width:25%;
+}
+#gems{
+    height:100px;
+    display:flex;
+    flex-direction:row;
 }
 
-th,td{
-    border:1px solid black;
-}
-#StatsTable > th,td{
-    width:33%;
-}
-/*
-th, td{
-    width:33%;
-    border:1px solid black; /* while testing */
-/*}
-
-tr{
-    line-height:4em;
-}
-*/
-
-#GuessTable{
-    border:1px solid black;
-    width:96%;
-    line-height: 1.5em; 
-    font-weight: bold;
-    margin-left:2%;
-    margin-right:2%;
-    margin-bottom:20px;
+#wins{
+    clear:left;
 }
 
-#guessedDog{
-    width:120px;
-    height:90px;
-    margin:auto;
-    text-align:center;
+.myImage{
+    width:auto;
+    height:100%
 }
