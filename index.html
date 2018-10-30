@@ -2,41 +2,35 @@
 <html lang="en-us">
     <head>
         <meta charset="utf-8">
-        <title>Gem Collector!</title>
+        <title>Trivia Game</title>
         <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="assets/css/style.css">
-        
         <!-- Link to the jQuery Library -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
-
     <body>
-        <h1>Gem Collector</h1>
-        <div id="instructions">
-            <p>Win by matching your score to the target score</p>
-            <p>Each gem below has a secret random value each game</p>
-            <p>Click on a gem, and add that tile's secret value to your score</p>
+    <div id="backgroundPane">
+        <h1>Multiple Choice Craziness!</h1>
+
+        <div id="question" class="questionScreen"></div>
+        <div id="answerContainer" class="questionScreen">&nbsp
+            <div id="A" class="answer questionScreen"></div>
+            <div id="B" class="answer questionScreen"></div>
+            <div id="C" class="answer questionScreen"></div>
+            <div id="D" class="answer questionScreen"></div>
+            &nbsp
         </div>
-        <div id="targetScore"></div>
-        <div id="playerScore"></div>
-        <div id="gems">
-            <div class="gem">
-                <img id="ruby" class="myImage" src="assets/images/ruby.jfif" alt="ruby">
-            </div>
-            <div class="gem">
-                <img id="sapphire" class="myImage" src="assets/images/sapphire.jfif" alt="ruby">
-            </div>
-            <div class="gem">
-                <img id="amber" class="myImage" src="assets/images/amber.jfif" alt="ruby">
-            </div>
-            <div class="gem">
-                <img id="emerald" class="myImage" src="assets/images/emerald.jfif" alt="ruby">
-            </div>
-        </div>
-        <div id="wins"></div>
-        <div id="losses"></div>
+        <div id="answerStatus" class="answerScreen"></div>
+        <div id="correctAnswer" class="answerScreen"></div>
+    <!--    <div id="correctAnswerValue" class="answerScreen"></div>  -->
+        <div id="countdown" class="questionScreen answerScreen"></div>
+        <div id="correctAnswers" class="statScreen"></div>
+        <div id="incorrectAnswers" class="statScreen"></div>
+        <div id="unanswered" class="statScreen"></div>
+        <div id="playAgain" class="statScreen">Would you like to play again?</div>
+        <div id="startButton" class="startScreen statScreen">Start the Game!</div>
+
+    </div> <!--end backgroundPane-->
     </body>
-
-    <script src="assets/javascript/game.js"></script>
-
+    <script src="assets/javascript/app.js"></script>
 </html>
