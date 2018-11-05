@@ -1,36 +1,31 @@
 <!doctype html>
-<html lang="en-us">
-    <head>
-        <meta charset="utf-8">
-        <title>Trivia Game</title>
+<html lang='us-eng'>
+    <header>
+        <meta charset='utf-8'>
+        <title>Giphy Browser</title>
         <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="assets/css/style.css">
-        <!-- Link to the jQuery Library -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    </head>
+    </header>
     <body>
-    <div id="backgroundPane">
-        <h1>Multiple Choice Craziness!</h1>
 
-        <div id="question" class="questionScreen"></div>
-        <div id="answerContainer" class="questionScreen">&nbsp
-            <div id="A" class="answer questionScreen"></div>
-            <div id="B" class="answer questionScreen"></div>
-            <div id="C" class="answer questionScreen"></div>
-            <div id="D" class="answer questionScreen"></div>
-            &nbsp
-        </div>
-        <div id="answerStatus" class="answerScreen"></div>
-        <div id="correctAnswer" class="answerScreen"></div>
-    <!--    <div id="correctAnswerValue" class="answerScreen"></div>  -->
-        <div id="countdown" class="questionScreen answerScreen"></div>
-        <div id="correctAnswers" class="statScreen"></div>
-        <div id="incorrectAnswers" class="statScreen"></div>
-        <div id="unanswered" class="statScreen"></div>
-        <div id="playAgain" class="statScreen">Would you like to play again?</div>
-        <div id="startButton" class="startScreen statScreen">Start the Game!</div>
+        <h1>Giphy Browser</h1>
+        
+        <form id="topicForm">
+            <label for="topicInput">Add new topic:</label>
+            <input type="text" id="topicInput">
+            <input id="addTopic" type="submit" value="Submit">
+            
+        </form>
+        <h2>Topics</h2>
+       <div id="topicButtons">
+           
+       </div>
 
-    </div> <!--end backgroundPane-->
+       <div id="resultsContainer">
+           
+       </div>
+
     </body>
     <script src="assets/javascript/app.js"></script>
 </html>
