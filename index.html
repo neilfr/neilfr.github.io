@@ -1,32 +1,20 @@
 <!doctype html>
-<html lang='us-eng'>
+<html lang='en-us'>
+    <meta name = "viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
     <head>
-        <meta charset='utf-8'>
-        <meta name = "viewport" content="width=device-width, initial-scale=1">
-        <title>Giphy Browser</title>
+        <title>RPS-Multiplayer</title>
         <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="assets/css/style.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
     </head>
+     
     <body>
-
-        <h1>Giphy Browser</h1>
-        
-        <form id="topicForm">
-            <label for="topicInput">Add new topic:</label>
-            <input type="text" id="topicInput">
-            <input id="addTopic" type="submit" value="Submit">
+        <div id='numChildren'>
             
-        </form>
-        <h2>Topics</h2>
-       <div id="topicButtons">
-           
-       </div>
-
-       <div id="resultsContainer">
-           
-       </div>
-
+        </div>
+        <script src="assets/javascript/app.js"></script>
     </body>
-    <script src="assets/javascript/app.js"></script>
+
 </html>
