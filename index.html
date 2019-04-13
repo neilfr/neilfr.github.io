@@ -6,14 +6,32 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <title>
+      test
+    </title>
     <link rel="stylesheet" href="css/reset.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"
     ></script>
+    <!--
+    <script
+      src="https://code.jquery.com/jquery-3.4.0.js"
+      integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+      crossorigin="anonymous"
+    ></script>
+-->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -25,49 +43,54 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/script.js"></script>
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/style.css" />
 
-    <title>Neil Froggatt</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <button
         class="navbar-toggler"
         type="button"
         data-toggle="collapse"
-        data-target="#navbarTogglerDemo01"
-        aria-controls="navbarTogglerDemo01"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div
-        class="collapse navbar-collapse navbar-dark"
-        id="navbarTogglerDemo01"
-      >
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="#helloworld">Hello World</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li
+            class="nav-item nav-link"
+            onclick="window.location='#helloworld'"
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+          >
+            Hello World
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
+          <li
+            class="nav-item nav-link"
+            onclick="window.location='#projects'"
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+          >
+            Projects
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
+          <li
+            class="nav-item nav-link"
+            onclick="window.location='#about'"
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+          >
+            About Me
           </li>
         </ul>
       </div>
     </nav>
 
-    <div id="helloworld" class="jumbotron jumbotron-fluid vertical-center">
+    <div id="helloworld" class="jumbotron jumbotron-fluid">
       <div class="container">
         <div class="row h-100">
           <div class="col-md-4 text-center my-auto">
@@ -81,7 +104,7 @@
           <div class="col-md-8">
             <div class="row">
               <p class="display-3">Neil Froggatt<b>&nbsp;BMath</b></p>
-              <p class="display-4">Fullstack Web Developer</p>
+              <p class="display-4">Full Stack Developer</p>
             </div>
             <div class="row">
               <p class="lead">
@@ -97,209 +120,199 @@
         </div>
       </div>
     </div>
-
-    <div
-      id="projects"
-      class="jumbotron jumbotron-fluid"
-      style="height:100vh;margin-bottom:0;"
-    >
+    <div id="projects" class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-4">Projects</h1>
-        <!--
-        <p class="lead">
-          This is a modified jumbotron that occupies the entire horizontal space
-          of its parent.
-        </p>
-        -->
-        <div class="card-deck">
-          <!-- Project2 Card -->
-          <div
-            class="card"
-            data-toggle="modal"
-            data-target="#project2ModalCenter"
-          >
-            <img
-              src="images/scorekeeper.JPG"
-              class="card-img-top"
-              alt="Scorekeepers"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Scorekeepers</h5>
-              <p class="card-text">
-                Hockey scorekeeper application that simplifies game data
-                capture, provides real-time updates and replaces the need for
-                hardcopy scoresheets
-              </p>
+          <h1 class="display-4">Projects</h1>
+          <!--
+          <p class="lead">
+            This is a modified jumbotron that occupies the entire horizontal space
+            of its parent.
+          </p>
+          -->
+          <div class="card-deck">
+            <!-- Project2 Card -->
+            <div
+              class="card"
+              data-toggle="modal"
+              data-target="#project2ModalCenter"
+            >
+              <img
+                src="images/scorekeeper.JPG"
+                class="card-img-top"
+                alt="Scorekeepers"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Scorekeepers</h5>
+                <p class="card-text">
+                  Hockey scorekeeper application that simplifies game data
+                  capture, provides real-time updates and replaces the need for
+                  hardcopy scoresheets
+                </p>
+              </div>
             </div>
-          </div>
-
-          <!-- Project2 Modal -->
-          <div
-            class="modal fade"
-            id="project2ModalCenter"
-            tabindex="-1"
-            role="dialog"
-            aria-labelledby="exampleModalCenterTitle"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h4 class="modal-title" id="exampleModalCenterTitle">
-                    Scorekeepers
-                  </h4>
-                  <h5>Problem</h5>
-                  <ul>
-                      <li>
-                          Many hockey house league arena scorekeepers have to manage
-                          electronic digital scoreboards while also tracking game
-                          statistics manually on hardcopy scoresheets that then have
-                          to be rekeyed into league systems.
-                        </li>
+  
+            <!-- Project2 Modal -->
+            <div
+              class="modal fade"
+              id="project2ModalCenter"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalCenterTitle"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalCenterTitle">
+                      Scorekeepers
+                    </h4>
+                    <h5>Problem</h5>
+                    <ul>
                         <li>
-                          Also, many players’ family and friends would like to get
-                          real-time game updates when they are not able to attend
-                          games in person.
-                        </ul>
-                  </ul>
-                  
-
-                  <button
-                    type="button"
-                    class="close"
-                    data-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+                            Many hockey house league arena scorekeepers have to manage
+                            electronic digital scoreboards while also tracking game
+                            statistics manually on hardcopy scoresheets that then have
+                            to be rekeyed into league systems.
+                          </li>
+                          <li>
+                            Also, many players’ family and friends would like to get
+                            real-time game updates when they are not able to attend
+                            games in person.
+                          </ul>
+                    </ul>
+                    
+  
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
                 </div>
-                <div class="modal-body">
-                  ...
+              </div>
+            </div>
+  
+            <!-- Project1 Card -->
+            <div
+              class="card"
+              data-toggle="modal"
+              data-target="#project1ModalCenter"
+            >
+              <img
+                src="images/heartydiet3.JPG"
+                class="card-img-top"
+                alt="Hearty Diet"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Hearty Diet</h5>
+                <p class="card-text">
+                  Diet planning application for heart failure sufferers that need
+                  to control their potassium intake.
+                </p>
+                <!--
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+                -->
+              </div>
+            </div>
+  
+            <!-- Project1 Modal -->
+            <div
+              class="modal fade"
+              id="project1ModalCenter"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalCenterTitle"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">
+                      Hearty Diet
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Project3 Card -->
+            <div
+              class="card"
+              data-toggle="modal"
+              data-target="#project3ModalCenter"
+            >
+              <img
+                src="images/scraper2.JPG"
+                class="card-img-top"
+                alt="project3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">TSN Scraper</h5>
+                <p class="card-text">
+                  Experimentation with scraping headlines from a sports news
+                  website
+                </p>
+              </div>
+            </div>
+  
+            <!-- Project3 Modal -->
+            <div
+              class="modal fade"
+              id="project3ModalCenter"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalCenterTitle"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">
+                      TSN Scraper
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <!-- Project1 Card -->
-          <div
-            class="card"
-            data-toggle="modal"
-            data-target="#project1ModalCenter"
-          >
-            <img
-              src="images/heartydiet3.JPG"
-              class="card-img-top"
-              alt="Hearty Diet"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Hearty Diet</h5>
-              <p class="card-text">
-                Diet planning application for heart failure sufferers that need
-                to control their potassium intake.
-              </p>
-              <!--
-              <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </p>
-              -->
-            </div>
-          </div>
-
-          <!-- Project1 Modal -->
-          <div
-            class="modal fade"
-            id="project1ModalCenter"
-            tabindex="-1"
-            role="dialog"
-            aria-labelledby="exampleModalCenterTitle"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalCenterTitle">
-                    Hearty Diet
-                  </h5>
-                  <button
-                    type="button"
-                    class="close"
-                    data-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  ...
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project3 Card -->
-          <div
-            class="card"
-            data-toggle="modal"
-            data-target="#project3ModalCenter"
-          >
-            <img
-              src="images/scraper2.JPG"
-              class="card-img-top"
-              alt="project3"
-            />
-            <div class="card-body">
-              <h5 class="card-title">TSN Scraper</h5>
-              <p class="card-text">
-                Experimentation with scraping headlines from a sports news
-                website
-              </p>
-            </div>
-          </div>
-
-          <!-- Project3 Modal -->
-          <div
-            class="modal fade"
-            id="project3ModalCenter"
-            tabindex="-1"
-            role="dialog"
-            aria-labelledby="exampleModalCenterTitle"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalCenterTitle">
-                    TSN Scraper
-                  </h5>
-                  <button
-                    type="button"
-                    class="close"
-                    data-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  ...
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
-
-    <div
-      id="about"
-      class="jumbotron jumbotron-fluid"
-      style="height:100vh;margin-bottom:0;"
-    >
+    <div id=about class="jumbotron jumbotron-fluid">
       <div class="container">
         <h1 class="display-4">About Me</h1>
         <p class="lead">
-          I have completed the University of Toronto SCS Full Stack Developer
-          Program while concurrently completing my Computer Programmer diploma
+          I have completed the University of Toronto SCS Full Stack Coding
+          Boot Camp while concurrently completing my Computer Programmer diploma
           at Sheridan College. I have a love for coding and so have retrained
           and gone back to my roots as a developer.
         </p>
@@ -312,11 +325,11 @@
           back to what I love - coding!
         </p>
 
-        <h1 class="display-4">Technical Skills</h1>
+        <h1 class="display-4">Tech</h1>
         <p class="lead">
-          JavaScript, Java, PHP, HTML, CSS, Bootstrap, JQuery, Node.js,
-          Express.js, React.js, Handlebars.js, SQL, Mongo, Firebase, GitHub,
-          Visual Studio Code, NetBeans, C#
+          JavaScript, Java, SQL, PHP, HTML, CSS, C#, Bootstrap, JQuery, Node.js,
+          Express.js, React.js, Handlebars.js, MongoDB, Firebase, GitHub,
+          Visual Studio Code, NetBeans
         </p>
       </div>
     </div>

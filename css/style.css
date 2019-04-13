@@ -3,32 +3,50 @@ html {
 }
 
 .jumbotron {
-  height: 90vh;
-  margin-bottom: 0;
-}
+  padding-top: 4rem;
+  min-height: 100vh;
+  margin-bottom: 0px;
 
-.navbar {
-  height: 10vh;
-}
-
-.card:hover {
-  background-color: lightgray;
-}
-
-.clip-ellipse {
-  clip-path: ellipse(100px 150px at 150px 150px);
+  display: flex;
+  align-items: center;
 }
 
 .headshot {
   width: 300px;
 }
 
+b {
+  font-size: 0.3em;
+  font-style: italic;
+}
+
+.clip-ellipse {
+  clip-path: ellipse(90px 115px at 150px 135px);
+}
+
+.card:hover {
+  background-color: lightgray;
+}
+/*
+.body {
+  padding: 0%;
+}
+
+.navbar {
+  height: 10vh;
+  height: 10%;
+}
+
+
+
+
+
+
+
 .vertical-center {
   display: flex;
   align-items: center;
 }
 
-b {
-  font-size: 0.3em;
-  font-style: italic;
-}
+
+*/
