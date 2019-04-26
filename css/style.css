@@ -31,26 +31,15 @@ b {
 .card:hover {
   background-color: lightgray;
 }
-/*
-.body {
-  padding: 0%;
-}
-
-.navbar {
-  height: 10vh;
-  height: 10%;
-}
-
-
-
-
-
-
 
 .vertical-center {
   display: flex;
   align-items: center;
 }
 
-
-*/
+.myCard {
+  max-width: 18rem;
+  min-width: 18rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
